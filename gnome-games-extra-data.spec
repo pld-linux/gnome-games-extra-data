@@ -4,14 +4,14 @@
 Summary:	GNOME games extra data
 Summary(pl):	Dodatkowe grafiki dla gier GNOME
 Name:		gnome-games-extra-data
-Version:	2.8.0
+Version:	2.10.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.8/%{name}-%{version}.tar.bz2
-# Source0-md5:	6a3252a66e3c3ac09e2f951ee2d726b2
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-games-extra-data/2.10/%{name}-%{version}.tar.bz2
+# Source0-md5:	344c36ae58fa13fd4b180bd9fefe94d0
 URL:		http://www.gnome.org/
-Requires:	gnome-games >= 1:2.8.0
+Requires:	gnome-games >= 1:2.10.0
 Conflicts:	gnome-games < 2.7.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
@@ -143,4 +143,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files same-gnome
 %defattr(644,root,root,755)
-%{_pixmapsdir}/same-gnome/*
+%{_datadir}/gnome-games/same-gnome/themes/*/*
