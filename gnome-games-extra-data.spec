@@ -13,8 +13,8 @@ Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-games-extra-data/2.10/%{na
 URL:		http://www.gnome.org/
 Requires:	gnome-games >= 1:2.10.0
 Conflicts:	gnome-games < 2.7.7
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 GNOME games extra data.
