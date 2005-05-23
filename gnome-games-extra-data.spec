@@ -5,7 +5,7 @@ Summary:	GNOME games extra data
 Summary(pl):	Dodatkowe grafiki dla gier GNOME
 Name:		gnome-games-extra-data
 Version:	2.10.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-games-extra-data/2.10/%{name}-%{version}.tar.bz2
@@ -27,7 +27,7 @@ Summary:	Extra data for glines game
 Summary(pl):	Dodatkowe grafiki dla gry glines
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-games-glines
+Requires:	gnome-games-glines >= 1:2.10.1-1
 
 %description glines
 Extra data for glines game.
@@ -40,7 +40,7 @@ Summary:	Extra data for gnobots2 game
 Summary(pl):	Dodatkowe grafiki dla gry gnobots2
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-games-gnobots2
+Requires:	gnome-games-gnobots2 >= 1:2.10.1-1
 
 %description gnobots2
 Extra data for gnobots2 game.
@@ -53,7 +53,7 @@ Summary:	Extra data for gnometris game
 Summary(pl):	Dodatkowe grafiki dla gry gnometris
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-games-gnometris
+Requires:	gnome-games-gnometris >= 1:2.10.1-1
 
 %description gnometris
 Extra data for gnometris game.
@@ -66,7 +66,7 @@ Summary:	Extra data for iagno game
 Summary(pl):	Dodatkowe grafiki dla gry iagno
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-games-iagno
+Requires:	gnome-games-iagno >= 1:2.10.1-1
 
 %description iagno
 Extra data for iagno game.
@@ -79,7 +79,7 @@ Summary:	Extra data for mahjongg game
 Summary(pl):	Dodatkowe grafiki dla gry mahjongg
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-games-mahjongg
+Requires:	gnome-games-mahjongg >= 1:2.10.1-1
 
 %description mahjongg
 Extra data for mahjongg game.
@@ -92,7 +92,7 @@ Summary:	Extra data for same-gnome game
 Summary(pl):	Dodatkowe grafiki dla gry same-gnome
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-games-same-gnome
+Requires:	gnome-games-same-gnome >= 1:2.10.1-1
 
 %description same-gnome
 Extra data for same-gnome game.
