@@ -1,15 +1,13 @@
-
-%define		games_ver	1:2.12.0
-
+%define		games_ver	1:2.14.0
 Summary:	GNOME games extra data
 Summary(pl):	Dodatkowe grafiki dla gier GNOME
 Name:		gnome-games-extra-data
-Version:	2.12.0
+Version:	2.14.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-games-extra-data/2.12/%{name}-%{version}.tar.bz2
-# Source0-md5:	51b2b54c41b6d9cb1a228143723b43a1
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-games-extra-data/2.14/%{name}-%{version}.tar.bz2
+# Source0-md5:	01464739e83449288c6a58685604f86e
 URL:		http://www.gnome.org/
 Requires:	gnome-games >= %{games_ver}
 Conflicts:	gnome-games < 2.7.7
