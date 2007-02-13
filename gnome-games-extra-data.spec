@@ -1,6 +1,6 @@
 %define		games_ver	1:2.14.0
 Summary:	GNOME games extra data
-Summary(pl.UTF-8):   Dodatkowe grafiki dla gier GNOME
+Summary(pl.UTF-8):	Dodatkowe grafiki dla gier GNOME
 Name:		gnome-games-extra-data
 Version:	2.14.0
 Release:	1
@@ -22,7 +22,7 @@ Dodatkowe grafiki dla gier GNOME.
 
 %package glines
 Summary:	Extra data for glines game
-Summary(pl.UTF-8):   Dodatkowe grafiki dla gry glines
+Summary(pl.UTF-8):	Dodatkowe grafiki dla gry glines
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-games-glines >= %{games_ver}
@@ -35,7 +35,7 @@ Dodatkowe grafiki dla gry glines.
 
 %package gnobots2
 Summary:	Extra data for gnobots2 game
-Summary(pl.UTF-8):   Dodatkowe grafiki dla gry gnobots2
+Summary(pl.UTF-8):	Dodatkowe grafiki dla gry gnobots2
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-games-gnobots2 >= %{games_ver}
@@ -48,7 +48,7 @@ Dodatkowe grafiki dla gry gnobots2.
 
 %package gnometris
 Summary:	Extra data for gnometris game
-Summary(pl.UTF-8):   Dodatkowe grafiki dla gry gnometris
+Summary(pl.UTF-8):	Dodatkowe grafiki dla gry gnometris
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-games-gnometris >= %{games_ver}
@@ -61,7 +61,7 @@ Dodatkowe grafiki dla gry gnometris.
 
 %package iagno
 Summary:	Extra data for iagno game
-Summary(pl.UTF-8):   Dodatkowe grafiki dla gry iagno
+Summary(pl.UTF-8):	Dodatkowe grafiki dla gry iagno
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-games-iagno >= %{games_ver}
@@ -74,7 +74,7 @@ Dodatkowe grafiki dla gry iagno.
 
 %package mahjongg
 Summary:	Extra data for mahjongg game
-Summary(pl.UTF-8):   Dodatkowe grafiki dla gry mahjongg
+Summary(pl.UTF-8):	Dodatkowe grafiki dla gry mahjongg
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-games-mahjongg >= %{games_ver}
@@ -87,7 +87,7 @@ Dodatkowe grafiki dla gry mahjongg.
 
 %package same-gnome
 Summary:	Extra data for same-gnome game
-Summary(pl.UTF-8):   Dodatkowe grafiki dla gry same-gnome
+Summary(pl.UTF-8):	Dodatkowe grafiki dla gry same-gnome
 Group:		X11/Applications/Games
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-games-same-gnome >= %{games_ver}
