@@ -1,13 +1,13 @@
-%define		games_ver	1:2.22.0
+%define		games_ver	1:2.26.0
 Summary:	GNOME games extra data
 Summary(pl.UTF-8):	Dodatkowe grafiki dla gier GNOME
 Name:		gnome-games-extra-data
-Version:	2.24.0
+Version:	2.26.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-games-extra-data/2.24/%{name}-%{version}.tar.bz2
-# Source0-md5:	6167bd439e1923c127885e253be4fdbe
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-games-extra-data/2.26/%{name}-%{version}.tar.bz2
+# Source0-md5:	fbcfebfeefd3de4b6883c39a4ce3e0f4
 URL:		http://www.gnome.org/
 Requires:	gnome-games >= %{games_ver}
 Conflicts:	gnome-games < 2.7.7
@@ -121,24 +121,25 @@ rm -rf $RPM_BUILD_ROOT
 
 %files glines
 %defattr(644,root,root,755)
-%{_pixmapsdir}/glines/*
+%{_datadir}/gnome-games/glines/pixmaps/*.png
 
 %files gnobots2
 %defattr(644,root,root,755)
-%{_pixmapsdir}/gnobots2/*
+%{_datadir}/gnome-games/gnobots2/pixmaps/*.png
 
 %files gnometris
 %defattr(644,root,root,755)
-%{_pixmapsdir}/gnometris/*
+%{_datadir}/gnome-games/gnometris/pixmaps/*.png
 
 %files iagno
 %defattr(644,root,root,755)
-%{_pixmapsdir}/iagno/*
+%{_datadir}/gnome-games/iagno/pixmaps/*.png
 
 %files mahjongg
 %defattr(644,root,root,755)
-%{_pixmapsdir}/mahjongg/*
+%{_datadir}/gnome-games/mahjongg/pixmaps/*.png
 
 %files same-gnome
 %defattr(644,root,root,755)
-%{_datadir}/gnome-games/same-gnome/themes/*/*
+%{_datadir}/gnome-games/same-gnome/themes/*/*.png
+%{_datadir}/gnome-games/same-gnome/themes/*/*.svg
