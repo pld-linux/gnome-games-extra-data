@@ -1,13 +1,13 @@
-%define		games_ver	1:2.26.0
+%define		games_ver	1:2.28.0
 Summary:	GNOME games extra data
 Summary(pl.UTF-8):	Dodatkowe grafiki dla gier GNOME
 Name:		gnome-games-extra-data
-Version:	2.26.0
+Version:	2.28.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-games-extra-data/2.26/%{name}-%{version}.tar.bz2
-# Source0-md5:	fbcfebfeefd3de4b6883c39a4ce3e0f4
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-games-extra-data/2.28/%{name}-%{version}.tar.bz2
+# Source0-md5:	a9f6ca8a2ae28659feb4ee3254020115
 URL:		http://www.gnome.org/
 Requires:	gnome-games >= %{games_ver}
 Conflicts:	gnome-games < 2.7.7
@@ -125,7 +125,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files gnobots2
 %defattr(644,root,root,755)
-%{_datadir}/gnome-games/gnobots2/pixmaps/*.png
+%{_datadir}/gnome-games/gnobots2/themes/*.png
 
 %files gnometris
 %defattr(644,root,root,755)
