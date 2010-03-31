@@ -1,16 +1,18 @@
-%define		games_ver	1:2.28.0
+%define		games_ver	1:2.30.0
 Summary:	GNOME games extra data
 Summary(pl.UTF-8):	Dodatkowe grafiki dla gier GNOME
 Name:		gnome-games-extra-data
-Version:	2.28.0
+Version:	2.30.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-games-extra-data/2.28/%{name}-%{version}.tar.bz2
-# Source0-md5:	a9f6ca8a2ae28659feb4ee3254020115
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-games-extra-data/2.30/%{name}-%{version}.tar.bz2
+# Source0-md5:	dab5e24779b77bf9f9b1b422460a9a97
 URL:		http://www.gnome.org/
 Requires:	gnome-games >= %{games_ver}
 Conflicts:	gnome-games < 2.7.7
+Obsoletes:	gnome-games-extra-data-gnometris
+Obsoletes:	gnome-games-extra-data-same-gnome
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -46,19 +48,6 @@ Extra data for gnobots2 game.
 %description gnobots2 -l pl.UTF-8
 Dodatkowe grafiki dla gry gnobots2.
 
-%package gnometris
-Summary:	Extra data for gnometris game
-Summary(pl.UTF-8):	Dodatkowe grafiki dla gry gnometris
-Group:		X11/Applications/Games
-Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-games-gnometris >= %{games_ver}
-
-%description gnometris
-Extra data for gnometris game.
-
-%description gnometris -l pl.UTF-8
-Dodatkowe grafiki dla gry gnometris.
-
 %package iagno
 Summary:	Extra data for iagno game
 Summary(pl.UTF-8):	Dodatkowe grafiki dla gry iagno
@@ -84,19 +73,6 @@ Extra data for mahjongg game.
 
 %description mahjongg -l pl.UTF-8
 Dodatkowe grafiki dla gry mahjongg.
-
-%package same-gnome
-Summary:	Extra data for same-gnome game
-Summary(pl.UTF-8):	Dodatkowe grafiki dla gry same-gnome
-Group:		X11/Applications/Games
-Requires:	%{name} = %{version}-%{release}
-Requires:	gnome-games-same-gnome >= %{games_ver}
-
-%description same-gnome
-Extra data for same-gnome game.
-
-%description same-gnome -l pl.UTF-8
-Dodatkowe grafiki dla gry same-gnome.
 
 %prep
 %setup -q
@@ -127,10 +103,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_datadir}/gnome-games/gnobots2/themes/*.png
 
-%files gnometris
-%defattr(644,root,root,755)
-%{_datadir}/gnome-games/gnometris/pixmaps/*.png
-
 %files iagno
 %defattr(644,root,root,755)
 %{_datadir}/gnome-games/iagno/pixmaps/*.png
@@ -138,8 +110,3 @@ rm -rf $RPM_BUILD_ROOT
 %files mahjongg
 %defattr(644,root,root,755)
 %{_datadir}/gnome-games/mahjongg/pixmaps/*.png
-
-%files same-gnome
-%defattr(644,root,root,755)
-%{_datadir}/gnome-games/same-gnome/themes/*/*.png
-%{_datadir}/gnome-games/same-gnome/themes/*/*.svg
