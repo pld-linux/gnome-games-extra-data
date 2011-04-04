@@ -1,13 +1,13 @@
-%define		games_ver	1:2.30.0
+%define		games_ver	1:3.0.0
 Summary:	GNOME games extra data
 Summary(pl.UTF-8):	Dodatkowe grafiki dla gier GNOME
 Name:		gnome-games-extra-data
-Version:	2.30.0
+Version:	3.0.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-games-extra-data/2.30/%{name}-%{version}.tar.bz2
-# Source0-md5:	dab5e24779b77bf9f9b1b422460a9a97
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-games-extra-data/3.0/%{name}-%{version}.tar.bz2
+# Source0-md5:	0fdd978671120a7b01daf11a9f525adb
 URL:		http://www.gnome.org/
 Requires:	gnome-games >= %{games_ver}
 Conflicts:	gnome-games < 2.7.7
@@ -78,7 +78,8 @@ Dodatkowe grafiki dla gry mahjongg.
 %setup -q
 
 %build
-%configure
+%configure \
+	--disable-silent-rules
 %{__make}
 
 %install
