@@ -1,14 +1,16 @@
-%define		games_ver	1:3.0.0
+%define		games_ver	1:3.2.0
 Summary:	GNOME games extra data
 Summary(pl.UTF-8):	Dodatkowe grafiki dla gier GNOME
 Name:		gnome-games-extra-data
-Version:	3.0.0
+Version:	3.2.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-games-extra-data/3.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	0fdd978671120a7b01daf11a9f525adb
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-games-extra-data/3.2/%{name}-%{version}.tar.xz
+# Source0-md5:	6649fa10772261059a3c9615d8b8298b
 URL:		http://www.gnome.org/
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	xz
 Requires:	gnome-games >= %{games_ver}
 Conflicts:	gnome-games < 2.7.7
 Obsoletes:	gnome-games-extra-data-gnometris
@@ -94,7 +96,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
-%{_datadir}/gnome-games-common/cards
 
 %files glines
 %defattr(644,root,root,755)
